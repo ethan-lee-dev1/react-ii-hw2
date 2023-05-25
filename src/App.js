@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Animals } from "./Animals";
+import "./App.css";
 
 function App() {
+  let animals = [
+    { name: "🐶dog", color: "rgb(156, 192, 231)" },
+    { name: "🐱cat", color: "rgb(238, 238, 238)" },
+    { name: "🐔chicken", color: "rgb(252, 252, 252)" },
+    { name: "🐮cow", color: "rgb(250, 234, 203)" },
+    { name: "🐑sheep", color: "rgb(247, 219, 215)" },
+    { name: "🐴horse", color: "rgb(231, 128, 160)" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Animals animals={animals} />
     </div>
   );
 }
